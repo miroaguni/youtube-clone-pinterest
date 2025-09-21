@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, button, input {
+  font-family: -apple-system, Ubuntu, Arial, sans-serif;
+}
+
+*, li {
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 7, 252px;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  width: 100%;
+  height: 350px;
+  background-color: #e60023;
+  border-radius: 10px;
+}/*# sourceMappingURL=styles.css.map */
