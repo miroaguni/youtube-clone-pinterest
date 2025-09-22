@@ -13,8 +13,13 @@
 }
 
 .item {
-    width: 100%;
+    width: 236px;
     height: 350px;
-     background-color: v.$red; // usa com o namespace "v"
-     border-radius: 10px;
+    background-color: v.$red; // usa com o namespace "v"
+    border-radius: 10px;
+}
+
+.item:not(:first-child) {
+    margin-top:16px;
+
 }
