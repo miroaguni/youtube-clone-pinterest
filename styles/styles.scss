@@ -1,7 +1,8 @@
-@import './reset';
-@import './variables';
+@import './reset.scss';
+@import './variables.scss';
+@import './animations.scss';
 
-@import './header';
-@import './heading';
-@import './grid';
+@import './header.scss';
+@import './heading.scss';
+@import './grid.scss';
 
