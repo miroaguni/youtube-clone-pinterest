@@ -8,7 +8,8 @@
   font-family: -apple-system, Ubuntu, Arial, sans-serif;
 }
 
-*, li {
+*,
+li {
   list-style: none;
 }
 

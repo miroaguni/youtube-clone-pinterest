@@ -16,21 +16,23 @@ header{
         ul{
             li{
             padding: 16px;
+                
                 a{
                     text-decoration: none;
                     font-size: 16px;
                     color: $black;
                     font-weight: 700;
 
-                &:hover {
-                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
-    }
    .buttons{
         display:flex;
         margin-left: 24px;
+        
         button {
             font-size: 16px;
             font-weight: 700;
