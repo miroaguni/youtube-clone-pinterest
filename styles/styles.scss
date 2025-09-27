@@ -1,5 +1,7 @@
-@use './reset';
-@use './variables';
+@import './reset';
+@import './variables';
 
-@use './grid';
+@import './header';
+@import './heading';
+@import './grid';
 
