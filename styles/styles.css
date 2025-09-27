@@ -12,6 +12,18 @@
   list-style: none;
 }
 
+.animate-before {
+  transform: translateY(40px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.animation-after {
+  transform: translateY(-40px);
+  opacity: 0;
+  pointer-events: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -59,6 +71,7 @@ header nav .buttons .login {
 }
 header nav .buttons .signup {
   margin-left: 16px;
+  background: #efefef;
 }
 
 .heading {
@@ -68,24 +81,23 @@ header nav .buttons .signup {
   align-items: center;
   text-align: center;
 }
-
-.text {
+.heading .text {
   font-size: 60px;
   font-weight: 600;
 }
-
-.wrapper {
+.heading .wrapper {
   position: relative;
 }
-.wrapper .offset {
+.heading .wrapper .offset {
   position: absolute;
   top: 0;
   left: 0;
   transform: translateX(-50%);
 }
-.wrapper .text {
+.heading .wrapper .text {
   white-space: nowrap;
   color: #FFA600;
+  transition-duration: 1s;
 }
 
 .grid-container {
@@ -98,6 +110,17 @@ header nav .buttons .signup {
 .grid {
   display: grid;
   grid-template-columns: repeat(7, 252px);
+  max-height: 0px;
+  visibility: hidden;
+  pointer-events: none;
+  visibility: hidden;
+  pointer-events: none;
+  max-height: 0px;
+}
+.grid.active {
+  max-height: unset;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .column {
@@ -105,27 +128,35 @@ header nav .buttons .signup {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 1s;
 }
 .column:nth-child(1) {
   margin-top: 0;
+  transition-delay: 0s;
 }
 .column:nth-child(2) {
   margin-top: 160px;
+  transition-delay: 0.2s;
 }
 .column:nth-child(3) {
   margin-top: 320px;
+  transition-delay: 0.4s;
 }
 .column:nth-child(4) {
   margin-top: 480px;
+  transition-delay: 0.6s;
 }
 .column:nth-child(5) {
   margin-top: 320px;
+  transition-delay: 0.8s;
 }
 .column:nth-child(6) {
   margin-top: 160px;
+  transition-delay: 1s;
 }
 .column:nth-child(7) {
   margin-top: 0;
+  transition-delay: 1.2s;
 }
 
 .item {

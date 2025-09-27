@@ -9,6 +9,10 @@
     display: grid;
     grid-template-columns: repeat(7, 252px);
 
+    max-height: 0px;
+    visibility: hidden;
+    pointer-events: none;
+
     visibility: hidden;
     pointer-events: none;
     max-height: 0px;
@@ -17,6 +21,7 @@
         max-height: unset;
         visibility: visible;
         pointer-events: auto;
+    }
 }
 
 .column {
