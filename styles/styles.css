@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -163,8 +164,17 @@ header nav .buttons .signup {
 .item {
   width: 236px;
   height: 350px;
-  background-color: #FFA600;
+  background-color: #FFA600; /* Esta cor aparecerá enquanto a imagem carrega */
   border-radius: 10px;
+  overflow: hidden; /* Garante que a imagem não ultrapasse as bordas arredondadas */
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* Essencial para redimensionar a imagem para cobrir o contêiner sem perder a proporção */
+  display: block; /* Remove qualquer espaço extra abaixo da imagem */
 }
 
 .item:not(:first-child) {
